@@ -1,2 +1,14 @@
-# mouseCTR
-Use the middle mouse button to control scrolling.
+# MouseAutoScroll
+
+macOS 菜单栏中键自动滚动工具。
+
+## 使用
+
+1. 运行 `scripts/build-app.sh`。
+2. 打开 `build/MouseAutoScroll.app`。
+3. 根据系统提示，在“系统设置 → 隐私与安全性”中允许输入监控和辅助功能权限。
+4. 权限修改后重新启动应用，或从菜单栏选择“重新检查并申请权限”。
+5. 在可滚动区域按一次鼠标中键，以按下位置为速度计算锚点；向上或向下移动鼠标控制滚动方向和速度，程序不会锁定或重置鼠标位置。
+6. 按任意鼠标按键或 `Esc` 退出本次自动滚动。
+
+应用只使用公开的 Core Graphics 和 AppKit API，不读取页面结构，也不依赖浏览器扩展。
